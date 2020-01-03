@@ -136,7 +136,7 @@ def create_stop_locations_details(route_list):
 def get_sustrans_data():
     #coords = convert_coords(BRISTOL_CENTRE)
     # Get the route url
-    url = BCC_URL.format("sustrans-cycle-network", "2000", BRISTOL_CENTRE[0], BRISTOL_CENTRE[1], 100000)
+    url = BCC_URL.format("sustrans-cycle-network", "5000", BRISTOL_CENTRE[0], BRISTOL_CENTRE[1], 1000000)
     # Perform a GET request to the route API
     result = requests.get(url)
     # Convert the return value to JSON
